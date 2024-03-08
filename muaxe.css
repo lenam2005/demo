@@ -1,0 +1,76 @@
+.cacsanpham {
+  width: 100%;
+  margin: 0px auto;
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cacsanpham article {
+  width: 100%;
+  margin: 0px auto;
+  padding: 50px 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 45px;
+}
+
+.sanpham {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  border: 1px double rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 4px 5px 5px;
+  transition: all 0.2s ease 0s;
+}
+
+.sanpham:hover {
+  box-shadow: rgba(0, 0, 0, 0.48) 0px 0px 15px;
+}
+
+.sanpham > h4 {
+  text-align: center;
+  font-size: 25px;
+  color: brown;
+  padding: 10px;
+}
+
+.sanpham > img {
+  width: 100%;
+  cursor: zoom-in;
+}
+
+.sanpham > h5 {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(255, 41, 100);
+  padding: 10px 5px;
+}
+
+.sanpham > p {
+  text-align: center;
+  text-indent: 30px;
+  padding: 10px 0px;
+  background: rgba(255, 96, 0, 0.247);
+  color: rgb(255, 96, 0);
+  border-radius: 8px;
+  margin: 20px 10px 10px;
+  cursor: pointer;
+}
+
+.sanpham span {
+  padding-right: 40px;
+}
+
+h4 {
+  width: 90%;
+  margin: 0px auto;
+  padding: 50px 0px 40px;
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(236, 72, 132), rgb(255, 182, 3), rgb(255, 152, 0)) text;
+  -webkit-text-fill-color: transparent;
+}

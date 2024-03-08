@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"); 
+* {
+  font-family: Nunito, sans-serif;
+}
+.heading{
+  width: 90%;
+  margin: 0px auto;
+  padding: 50px 0px 40px;
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(236, 72, 132), rgb(255, 182, 3), rgb(255, 152, 0)) text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact .form h2 {
+    text-align: center;
+    font-size: 26px;
+    color: var(--black-color);
+    margin-bottom: 20px;
+  }
+  .contact .form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    width: 100%
+  }
+  .contact .form form input:not(input[type="submit"]),
+  .contact .form form textarea {
+    padding: 13px 10px;
+    padding-left: 17px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    caret-color: var(--main-color);
+    outline: none;
+    font-family: inherit;
+    font-size: 15px;
+    transition: var(--transition);
+    background-color: var(--bg-color);
+  }
+  .contact .form form input:not(input[type="submit"]):focus,
+  .contact .form form textarea:focus {
+    border-color: var(--main-color);
+  }
+  .contact .form form textarea {
+    height: 130px;
+    resize: none;
+  }
+  .contact .form form button {
+    align-self: end;
+    padding: 13px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(56, 189, 248), rgb(103, 232, 249));
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+
+  .contact .form a {
+    list-style: none;
+    color: white;
+    font-family: inherit;
+    text-decoration: none;
+  }

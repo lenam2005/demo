@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CỬA HÀNG</title>
+    <link rel="stylesheet" href="muaxe.css">
+</head>
+<body>
+    <section id="container-big">
+        <div class="loaixe">
+            <h4>CỬA HÀNG</h4>
+        </div>
+        <hr>
+        <!-- Form thanh toán -->
+
+        <div class="wrapper-sell">
+        
+        </div>
+
+        <div class="cacsanpham">
+            <article>
+                <div class="sanpham">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5c1adf16/images/Lux-SA/hinh-anh-gia-VinFast-Lux-SA2.0-ban-tieu-chuan-base-tra-gop-mau-do-red.png" alt="wave">
+                    <h4>Vinfast Lux SA2.0</h4>
+                    <h5>Ngoại hình thanh lịch</h5>
+                    <p class="btn-price">
+                      <span><i class="fa-solid fa-cart-plus"></i> 1.649.000.000 VNĐ</span>
+                    </p>
+                </div>
+                <div class="sanpham">
+                    <img src="https://vinfastphamvandong3s.com/wp-content/uploads/2020/06/vinfast-lux-a-bac.png" alt="blade">
+                    <h4>Vinfast Lux A2.0</h4>
+                    <h5> Thanh lịch, nhẹ nhàng và tinh tế</h5>
+                    <p class="btn-price">
+                      <span><i class="fa-solid fa-cart-plus"></i> 1.179.000.000 VNĐ</span>
+                    </p>
+                </div>
+                <div class="sanpham">
+    <img src="https://storage.googleapis.com/f1-cms/2021/06/4639760b-20210607_035519.jpg" alt="Future125">
+                    <h4>Vinfast Vf5</h4>
+                    <h5>phong cách, cá tính</h5>
+                    <p class="btn-price">
+                      <span><i class="fa-solid fa-cart-plus"></i> 458.000.000 VNĐ</span>
+                    </p>
+                </div>
+                <div class="sanpham">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5c1adf16/images/Lux-SA/hinh-anh-gia-VinFast-Lux-SA2.0-ban-tieu-chuan-base-tra-gop-mau-do-red.png" alt="wave">
+                    <h4>Vinfast Fadil</h4>
+                    <h5>xe đô thị cỡ nhỏ </h5>
+                    <p class="btn-price">
+                      <span><i class="fa-solid fa-cart-plus"></i> 382.500.000 VNĐ</span>
+                    </p>
+                </div>
+                <div class="sanpham">
+                    <img src="https://storage.googleapis.com/f1-cms/2021/06/97e72b77-20210607_034055.jpg" alt="blade">
+                    <h4>Vinfast President</h4>
+                    <h5> Thanh lịch và sang trọng</h5>
+                    <p class="btn-price">
+                      <span><i class="fa-solid fa-cart-plus"></i> 4.600.000.000 VNĐ</span>
+                    </p>
+                </div>
+                <div class="sanpham">
+    <img src="https://storage.googleapis.com/f1-cms/2021/06/b33aa6a0-20210607_040404.jpg" alt="Future125">
+                    <h4>Vinfast VF e34</h4>
+                    <h5>mẫu xe ô tô điện đầu tiên</h5>
+                    <p class="btn-price">
+                      <span><i class="fa-solid fa-cart-plus"></i> 690.000.000 VNĐ</span>
+                    </p>
+                </div>
+                <div class="sanpham">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4d54f126/images/PDP/vf8/img-CE18.webp" alt="wave">
+                    <h4>Vinfast Vf8</h4>
+                    <h5>SUV cỡ trung thời thượng</h5>
+                    <p class="btn-price">
+                      <span><i class="fa-solid fa-cart-plus"></i> 1.290.000.000 VNĐ</span>
+                    </p>
+                </div>
+                <div class="sanpham">
+                    <img src="https://vinfastphamvandong3s.com/wp-content/uploads/2020/06/vinfast-lux-a-bac.png" alt="blade">
+                    <h4>Vinfast Vf9</h4>
+                    <h5> Đẳng cấp thượng lưu</h5>
+                    <p class="btn-price">
+                      <span><i class="fa-solid fa-cart-plus"></i> 1.479.000.000 VNĐ</span>
+                    </p>
+                </div>
+                <div class="sanpham">
+    <img src="https://vinfastotominhdao.vn/wp-content/uploads/vf7-2023-825x483.jpg" alt="Future125">
+                    <h4>Vinfast Vf7</h4>
+                    <h5>phong cách, cá tính</h5>
+                    <p class="btn-price">
+                      <span><i class="fa-solid fa-cart-plus"></i> 999.000.000 VNĐ</span>
+                    </p>
+                </div>
+    </article>
+    <script>
+        function removeItem() {
+          const removes = document.querySelectorAll('.remove');
+          removes.forEach((e) => {
+            e.onclick = (event) => {
+              const item = e.closest('li');
+              item.remove();
+            }
+          })
+        }
+
+        // add to cart 
+        function  renderAl( src, name, des ) {
+          const render = `
+          <li>
+            <section>
+              <div class="poster">
+                <img src="${src}" width="120px">
+              </div>
+              <div class="content">
+                <div class="title">${name}</div>
+                <div class="des">${des}</div>
+              </div>
+            </section>
+            <div class="options">
+              <div class="remove"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+          </li>
+          `;
+
+          listItems.innerHTML += render;
+
+          removeItem();
+        }
+        
+        const btnPrices = document.querySelectorAll('.btn-price');
+        const containerCart = document.querySelector('.container-cart');
+        const wrapperCart = document.querySelector('.wrapper-cart');
+        const listItems = document.querySelector('.list-items');
+
+        function cartClass() {
+            containerCart.classList.add('active');
+            wrapperCart.classList.add('active');
+
+            document.addEventListener('click', (event) => {
+                if(event.target == containerCart) {
+                  containerCart.classList.remove('active');
+                  wrapperCart.classList.remove('active');
+                }
+            })
+        }
+
+        btnPrices.forEach((button) => {
+          button.onclick = (e) => {
+            cartClass();
+            
+            const itemCoppy = button.closest('.sanpham');
+            const src = itemCoppy.querySelector('img').src;
+            const h4 = itemCoppy.querySelector('h4').textContent;
+            const h5 = itemCoppy.querySelector('h5').textContent;
+
+            renderAl(src, h4, h5);
+          }
+        })
+
+    </script>
+</body>
+</html>

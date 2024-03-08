@@ -1,0 +1,192 @@
+
+.heading{
+  
+    width: 90%;
+    margin: 0px auto;
+    padding: 50px 0px 40px;
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(236, 72, 132), rgb(255, 182, 3), rgb(255, 152, 0)) text;
+    -webkit-text-fill-color: transparent;
+  
+}
+.services {
+    background-color: var(--bg-color);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  }
+  .services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 370px));
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  @media (max-width: 991px) {
+    .services .container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 352px));
+    }
+  }
+  .container .box {
+    background-color: white;
+    border: 1px solid #eee;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: var(--transition);
+  }
+  .container .box:hover {
+    background-color: #00000099;
+  }
+  .container .box i {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    color: var(--black-color);
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  .container .box h3 {
+    color: var(--black-color);
+    transition: var(--transition);
+  }
+  .container .box p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 15px;
+    transition: var(--transition);
+  }
+  .container .box:hover h3,
+  .container .box:hover p {
+    color: white;
+  }
+  .container .box a {
+    text-decoration: none
+  }
+  .container .box button {
+    margin-top: 10px;
+    padding: 11px 19px;
+    border: none;
+    outline: none;
+    color: white !important;
+    border-radius: 3px;
+    background: linear-gradient(to left, #c3ff43, #f8ff8d)
+  }
+
+  .testimonial {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  }
+  .testimonial .container {
+    margin-top: 40px;
+  }
+  .testimonial .testimonial-swiper {
+    padding-bottom: 3rem;
+  }
+  .testimonial .box {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    text-align: center;
+    user-select: none;
+  }
+  .testimonial .box img {
+    width: 80px;
+    border-radius: 50%;
+  }
+  .testimonial .box h3 {
+    font-size: 26px;
+    color: var(--black-color);
+    margin: 10px 0;
+  }
+  .testimonial .box p {
+    margin: 10px 0;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .testimonial .box .stars i {
+    color: var(--main-color);
+  }
+  .contact {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    padding-top: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) / 2);
+  }
+  .contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .contact .map,
+  .contact .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 435px;
+    background-color: #fff;
+  }
+  @media (max-width: 767px) {
+    .contact .container {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    .contact .map,
+    .contact .form {
+      width: 100%;
+    }
+    .contact .map {
+      height: auto;
+    }
+  }
+  .contact .map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+  }
+  .contact .form h2 {
+    text-align: center;
+    font-size: 26px;
+    color: var(--black-color);
+    margin-bottom: 20px;
+  }
+  .contact .form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 80%
+  }
+  .contact .form form input:not(input[type="submit"]),
+  .contact .form form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    caret-color: var(--main-color);
+    outline: none;
+    transition: var(--transition);
+    background-color: var(--bg-color);
+  }
+  .contact .form form input:not(input[type="submit"]):focus,
+  .contact .form form textarea:focus {
+    border-color: var(--main-color);
+  }
+  .contact .form form textarea {
+    height: 130px;
+    resize: none;
+  }
+  .contact .form form button {
+    align-self: end;
+  }
